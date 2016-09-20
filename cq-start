@@ -1,9 +1,9 @@
 #!/bin/sh
 # path to instance	
-GGP_PATH='/Users/35437/Projects/ggp/aem-6_2/crx-quickstart/bin'
+PATH='/Users/35437/Projects/ggp/aem-6_2/crx-quickstart/bin'
 
 echo
-cd $GGP_PATH
+cd $PATH
 echo
 sh ./start
 echo start process $(lsof -n -i4TCP:4502 | grep LISTEN | awk '{print $2}')
